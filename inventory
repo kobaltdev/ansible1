@@ -1,6 +1,5 @@
-[local ubuntu servers]
+[local_ubuntu_servers]
 srvtest.lab
 srvapp.lab
 
-
-[remote ubuntu servers]
+[remote_ubuntu_servers]
