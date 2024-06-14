@@ -1,6 +1,6 @@
 [local_ubuntu_servers]
 srvtest.lab
-srvapp.lab
+# srvapp.lab
 
 [remote_ubuntu_servers]
 # srvt.unlog.sh
