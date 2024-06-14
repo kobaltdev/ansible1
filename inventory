@@ -1,4 +1,5 @@
-[local servers]
+[local ubuntu servers]
+srvtest.lab
 
 
-[remote servers]
+[remote ubuntu servers]
