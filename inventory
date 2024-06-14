@@ -1,5 +1,6 @@
 [local ubuntu servers]
 srvtest.lab
+srvapp.lab
 
 
 [remote ubuntu servers]
