@@ -1,0 +1,24 @@
+---
+
+- hosts: srvtest.lab
+  become: true
+  
+  tasks:
+    - name: update and upgrade first
+      apt:
+        update_cache: yes
+        upgrade: yes
+
+    - name: install packages
+      package:
+        name:
+          - "{{ htop }}"
+          - "{{ btop }}"
+          - "{{ qemu_agent}}"
+          - "{{ apache }}"
+          - "{{ php_for_apache}}"
+        state: latest
+        update_cache: yes
+
+    - name: reboot system after upgrade
+      ansible.builtin.reboot:
