@@ -1,11 +1,10 @@
 [local_ubuntu_servers]
-srvtest.lab htop=htop btop=btop qemu_agent=qemu-guest-agent apache=apache2 php_for_apache=libapache2-mod-php
 srvapp.lab
 srvgns3.lab
 srvmedia.lab
 srvzabbix.lab
 
 [remote_ubuntu_servers]
-srvt.unlog.sh
-srvw1
-srvn
+#srvt.unlog.sh
+#srvw1
+#srvn
