@@ -3,8 +3,19 @@ srvapp.lab
 srvgns3.lab
 srvmedia.lab
 srvzabbix.lab
+srvdev.lab
 
 [remote_ubuntu_servers]
-#srvt.unlog.sh
-#srvw1
-#srvn
+srvt.unlog.sh
+srvw1
+srvn
+
+[docker_servers]
+srvapp.lab
+srvmedia.lab
+srvzabbix.lab
+srvw1
+srvn
+
+
+[to_deploy_ubuntu_servers]

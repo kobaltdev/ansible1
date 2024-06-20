@@ -1,5 +1,4 @@
 ---
-
 - hosts: to_deploy_ubuntu_servers
   become: true
   vars:
@@ -8,7 +7,6 @@
       aarch64: arm64
 
   tasks:
-
     - name: update repo 1st
       apt:
         update_cache: yes
@@ -16,32 +14,7 @@
     - name: upgrade packages
       apt:
         upgrade: yes
-  
-    - name: Append custom prompt and aliases to .bashrc
-      ansible.builtin.blockinfile:
-        path: "/home/coffee/.bashrc"
-        block: "{{ lookup('ansible.builtin.file', '/home/coffee/ansible1/configs/bashrc_server.sh') }}"
-        state: present
-
-    - name: Customize sudoers file
-      ansible.builtin.blockinfile:
-        path: "/etc/sudoers"
-        block: "{{ lookup('ansible.builtin.file', '/home/coffee/ansible1/configs/sudoers_nopass.sh') }}"
-        state: present
-
-    - name: Install additional packages for Ubuntu servers
-      apt:
-        pkg:
-          - htop
-          - btop
-          - qemu-guest-agent
-          - net-tools
-          - ncdu
-          - cifs-utils
-          - nala
-        state: latest
-        update_cache: true
- 
+    
     - name: Install required Docker packages
       apt:
         pkg:
@@ -117,6 +90,6 @@
       apt:
         autoremove: true
     
-    - name: final system reboot
+    - name: reboot system after upgrade
       ansible.builtin.reboot:
-
+    
