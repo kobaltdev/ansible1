@@ -43,6 +43,12 @@
           - python-is-python3
         state: latest
         update_cache: true
+
+    - name: Remove some preinstalled packages
+      apt:
+        pkg:
+          - unattended-upgrades
+        state: absent
  
     - name: Install required Docker packages
       apt:
