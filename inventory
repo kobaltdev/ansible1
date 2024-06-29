@@ -1,6 +1,6 @@
 [local_ubuntu_servers]
 srvapp.lab
-srvgns3.lab
+# srvgns3.lab
 srvmedia.lab
 srvzabbix.lab
 srvdev.lab
