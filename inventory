@@ -1,6 +1,5 @@
 [local_ubuntu_servers]
 srvapp.lab
-# srvgns3.lab
 srvmedia.lab
 srvzabbix.lab
 srvdev.lab
@@ -19,4 +18,4 @@ srvn
 
 
 [to_deploy_ubuntu_servers]
-srvtest.lab
+debiantest.lab
