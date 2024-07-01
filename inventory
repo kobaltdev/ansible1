@@ -18,4 +18,4 @@ srvn
 
 
 [to_deploy_ubuntu_servers]
-debiantest.lab
+srvtestansible.sh
