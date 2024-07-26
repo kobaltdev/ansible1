@@ -18,4 +18,6 @@ srvn
 
 
 [to_deploy_ubuntu_servers]
-srvtestansible.sh
+srvtestansible
+ubuntunested1
+ubuntunested2
