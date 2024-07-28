@@ -1,2 +1,3 @@
 configs/bashrc_server.sh
 configs/sudoers_nopass.sh
+configs/upgrade_containers.py
