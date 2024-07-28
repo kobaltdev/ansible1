@@ -18,7 +18,7 @@
       group: coffee
       mode: 0664
 
-  - name: run the script
+  - name: Run the update script on targeted containers
     ansible.builtin.command:
       cmd: python3 /home/coffee/docker_scripts/upgrade_containers.py
     register: result
