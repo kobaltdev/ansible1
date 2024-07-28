@@ -1,0 +1,27 @@
+---
+
+# Doc : https://toptechtips.github.io/2023-06-10-ansible-python/
+
+- hosts: docker_servers
+
+  tasks:
+  - name: Create script dir
+    ansible.builtin.file:
+      path: /home/coffee/docker_scripts
+      state: directory
+
+  - name: Check if we have the script's latest version, and update it if needed
+    copy:
+      src: /home/coffee/ansible1/configs/upgrade_containers.py
+      dest: /home/coffee/docker_scripts
+      owner: coffee
+      group: coffee
+      mode: 0664
+
+  - name: run the script
+    ansible.builtin.command:
+      cmd: python3 /home/coffee/docker_scripts/upgrade_containers.py
+    register: result
+
+  - debug:
+      msg: "{{ result }}"
