@@ -41,6 +41,7 @@
           - nfs-common
           - nala
           - python-is-python3
+          - fio
         state: latest
         update_cache: true
 
