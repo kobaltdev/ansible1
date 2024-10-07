@@ -8,6 +8,7 @@ srvdev.lab
 srvt.unlog.sh
 srvw1
 srvn
+srvgns3
 
 [docker_servers]
 srvapp.lab
@@ -18,6 +19,6 @@ srvn
 
 
 [to_deploy_ubuntu_servers]
-srvtestansible
-ubuntunested1
-ubuntunested2
+#srvtestansible
+#ubuntunested1
+#ubuntunested2
