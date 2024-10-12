@@ -42,6 +42,7 @@
           - nala
           - python-is-python3
           - fio
+          - ack
         state: latest
         update_cache: true
 
